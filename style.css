@@ -5,7 +5,9 @@
     font-optical-sizing: auto;
 }
 
-
+.hide{
+    display:none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +29,9 @@ header {
     border-bottom: 1px solid #412567;
 }
 
+.mobile-hide-bar{
+    display: none;
+}
 .header-sections {
     display: flex;
     justify-content: space-between;
@@ -76,6 +81,7 @@ header {
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
+    background-position: center;
 }
 
 .hero-main {
@@ -132,6 +138,7 @@ header {
     margin-top: 24px;
     display: flex;
     gap: 8px;
+    cursor: pointer;
 }
 
 #hero {
@@ -143,7 +150,6 @@ header {
     padding: 12px 20px;
     border-radius: 10000px;
     border: none;
-    cursor: pointer;
     color: #ffffff;
 }
 
@@ -157,6 +163,7 @@ header {
     gap: 8px;
     padding: 12px 20px;
     border: 1px solid #00FF88;
+    cursor: pointer;
 }
 
 h1 p {
@@ -231,8 +238,8 @@ h1 p {
     font-weight: bold;
     font-size: 48px;
     color: #ffffff;
-    padding-bottom: 120px;
-    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 120px;
 
 
 }
@@ -299,6 +306,12 @@ h1 p {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.featured-i iframe{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
 .featured-section{
    padding-bottom: 120px;
    padding-left: 200px;
@@ -427,3 +440,205 @@ span{
       opacity: 60%;
       padding-bottom: 120px;
 }
+
+
+
+
+/* responsive layout */
+@media screen and (max-width: 576px) {
+     .container{
+        width:100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+.mobile-hide-bar{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header-sections ul{
+    display: none;
+}
+.hero {
+    background-image: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-position: center;
+}
+
+.circle {
+    background-image: url(assets/hero-circle.png);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+#btn {
+    margin-left: 115px;
+}
+
+.circle img{
+    width: 46px;
+    height: 70px;
+}
+
+.featured-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+}
+
+.header-sections button{
+    display: none;
+}
+
+    .hero-main{
+        padding: 0px 0px;
+    }
+    .hero-btn{
+        margin-bottom: 40px;
+        align-items: center;
+    }
+    #hero{
+        display:grid;
+   
+    gap: 10px;
+   padding: auto;
+    border-radius: 10000px;
+    border: none;
+    }
+.hero-main p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* about */
+     .tittle h1{
+        font-size: 25px;
+     }
+     .tittle p{
+        font-size: 13px;
+     }
+     .about{
+        padding:20px;
+        gap: 40px;
+     }
+     .card-section{
+        grid-template-columns:repeat(2, 1fr);
+        gap:40px;
+        align-items: center;
+        justify-content: center;
+     }
+
+    .listen h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+.grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 16px;
+}
+.grid-1{
+    grid-column: 1/1;
+    padding:24px;
+    border-radius: 24px;
+}
+.grid-2{
+     grid-column: 1/1;
+    padding:24px;
+    border-radius: 24px;
+}
+.grid-3{
+     grid-column: 1/1;
+    padding:24px;
+    border-radius: 24px;
+}
+.grid-4{
+     grid-column: 1/1;
+    padding:24px;
+    border-radius: 24px;
+}
+.grid-5{
+     grid-column: 1/1;
+    padding:24px;
+    border-radius: 24px;
+}
+
+/* featured */
+    .featured{ 
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+      .featured-ards{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+      }
+      .featured-ards-1{
+        width: 100%;
+      }
+       .host-tittles{
+        font-size: 32px;
+        margin-bottom: 24px;
+       }
+       .alex-kumer{
+        flex-direction: column;
+        padding: 24px;
+       }
+       .host-tittle h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .logo{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+    .alex-kumer{
+        background-color:#351165;
+    }
+       /* footer */
+       .footer-image{
+        margin-top: 40px;
+       }
+       .footer-logo span{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+       }
+#footer-logo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    padding-top: 0 auto;
+    /* padding-bottom: 40px; */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+       footer{
+          width: 100%;
+       }
+}
+
+
